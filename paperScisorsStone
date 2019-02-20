@@ -1,0 +1,32 @@
+print("Hello, welcome to stone-paper-sizars game, you gonna need to players. \n In order to play set your asnwer S - stone P- paper X - sizars")
+play=1
+while play==1:
+    a = input("first player guess: ")
+    b = input("seccond player guess: ")
+    a.lower()
+    b.lower()
+    if a==b:
+        print("draw")
+    intA=0
+    intB=0
+    if a=="p":
+        intA=1
+    elif a=="x":
+        intA=2
+    elif a=="s":
+        intA=3
+    elif b=="p":
+        intB=1
+    elif b=="x":
+        intB=2
+    elif b=="s":
+        intB=3
+    if a>b:
+        print("player one wins!")
+    if b>a:
+        print("player two wins!")
+    end = input("do you wanna play again? input Y/N")
+    if end=="N":
+        break
+    elif end=="Y":
+        continue
